@@ -64,9 +64,9 @@ class AttentiveGraphtoGraph(MessagePassing):
 
         attention = query + key                                         # sum                  
 
-        attention = torch.tanh(query)                                   # tanh layer
+        attention = torch.tanh(attention)                               # tanh layer
 
-        attention = self.FC_logit(query)                                # Fully conncected layer to Logit
+        attention = self.FC_logit(attention)                            # Fully conncected layer to Logit
 
         attention = torch.tanh(attention)                               # squish the attention to -1 and 1
 
