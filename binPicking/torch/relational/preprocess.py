@@ -20,7 +20,16 @@ e.g. Milk_pos
 
 
 """
-def fetch_preprocessing():
+def fetch_preprocessing(observations):
     ## TODO: preprocessing
+    edge_index = []
+    obj = {}
+    vertices = []
+    for key, value in observations.items():
+        key = key.split("_")
+        # organize data
 
-    return
+
+
+
+    return vertices,edge_index
