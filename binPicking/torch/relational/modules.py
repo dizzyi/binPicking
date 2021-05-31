@@ -25,12 +25,8 @@ class FetchInputPreprocessing(torch.nn.Module):
 
     def forward(self, obs):
         vertices, edge_index = fetch_preprocessing(obs) 
-
-<<<<<<< HEAD
-        return LayerNorm( self.FC64( vertices ) ), edge_index
-=======
-        return self.Norm( self.FC64( vertices ) )
->>>>>>> ba6a352f75c26f7a617d1317f2605d63a2fb8ef3
+        
+        return self.Norm( self.FC64( vertices ) ), edge_index
 
 
 
