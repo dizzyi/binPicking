@@ -22,7 +22,7 @@ def get_transform(train):
 
 def main():
     ###############################################################
-    # Datast and DataLoader
+    # Dataset and DataLoader
     ###############################################################
     dataset      = binPickingDataset(DATA_ROOT, get_transform(train=True))
     dataset_test = binPickingDataset(DATA_ROOT, get_transform(train=False))
